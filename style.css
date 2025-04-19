@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(178, 191, 78);
+    background-color: rgb(253, 236, 244);
 }
 
 a:link, a:visited {
-    background-color: #f44336;
+    background-color: #e8c7e8;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -12,5 +12,5 @@ a:link, a:visited {
   }
   
   a:hover, a:active {
-    background-color: red;
+    background-color: rgb(57, 1, 13);
   }
