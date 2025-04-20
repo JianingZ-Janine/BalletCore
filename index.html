@@ -22,92 +22,104 @@
   </header>
 
   <main>
+    <img src="home.webp" alt="banner" id="banner">
     <section id="ballet-classes">
       <br>
-      <h1>Local Ballet Class</h1>
-      <p>Whether you're a complete beginner dreaming of your first plié or a seasoned dancer looking to refine your
-        technique, Edinburgh has a wealth of ballet classes to suit every level, age, and interest. From graceful adult
-        beginner sessions to professional training for aspiring dancers, the city offers a vibrant ballet scene nestled
-        among its historic charm.
+      <div class="row">
+        <div class="left">
+          <h1>Local Ballet Class</h1>
+          <p>Whether you're a complete beginner dreaming of your first plié or a seasoned dancer looking to refine your
+            technique, Edinburgh has a wealth of ballet classes to suit every level, age, and interest. From graceful
+            adult
+            beginner sessions to professional training for aspiring dancers, the city offers a vibrant ballet scene
+            nestled
+            among its historic charm.
 
-        In this guide, you'll discover the best places across Edinburgh to take ballet classes — including local
-        studios,
-        community centres, dance schools, and hidden gems you might not have heard of. We’ve gathered essential details
-        on class types, levels, schedules, and what to expect, so you can find the perfect fit for your dance journey.
+            In this guide, you'll discover the best places across Edinburgh to take ballet classes — including local
+            studios,
+            community centres, dance schools, and hidden gems you might not have heard of. We’ve gathered essential
+            details
+            on class types, levels, schedules, and what to expect, so you can find the perfect fit for your dance
+            journey.
 
-        Whether you're dancing for fitness, expression, or pure joy, Edinburgh’s ballet community welcomes you.</p>
-      <img src="balletpointeshoes.jpg" alt="balletpointeshoes" style="width:500px;">
-      <br><a href="balletclass.html">Find the local available ballet classes</a>
+            Whether you're dancing for fitness, expression, or pure joy, Edinburgh’s ballet community welcomes you.</p>
+          <br><a href="balletclass.html">Find the local available ballet classes</a>
+        </div>
+        <div class="right">
+          <img src="balletpointeshoes.jpg" alt="balletpointeshoes">
+        </div>
+
+      </div>
     </section>
 
     <section id="balletshow">
-      <h1>Local Ballet Show</h1>
-      <p>Edinburgh’s rich cultural landscape extends far beyond its festivals and historic landmarks — it also boasts
-        a
-        thriving ballet scene that brings both classic elegance and contemporary creativity to the stage. Whether
-        you're a lifelong admirer of the art form or a curious first-time attendee, there’s always a ballet performance
-        waiting
-        to inspire.
+      <div class="row">
+        <div class="right">
+          <img src="balletshow.jpg" alt="balletshow">
+        </div>
+        <div class="left">
+          <h1>Local Ballet Show</h1>
+          <p>Edinburgh’s rich cultural landscape extends far beyond its festivals and historic landmarks — it also
+            boasts
+            a
+            thriving ballet scene that brings both classic elegance and contemporary creativity to the stage. Whether
+            you're a lifelong admirer of the art form or a curious first-time attendee, there’s always a ballet
+            performance
+            waiting
+            to inspire.
 
-        From grand productions at the Festival Theatre to intimate performances by local dance companies, the city
-        offers a
-        diverse calendar of shows throughout the year. This guide will help you discover upcoming ballet events,
-        explore
-        the
-        venues that host them, and learn how to book tickets — so you’ll never miss the magic of the next pas de deux.
+            From grand productions at the Festival Theatre to intimate performances by local dance companies, the city
+            offers a
+            diverse calendar of shows throughout the year. This guide will help you discover upcoming ballet events,
+            explore
+            the
+            venues that host them, and learn how to book tickets — so you’ll never miss the magic of the next pas de
+            deux.
 
-        Get ready to be moved by music, storytelling, and the timeless beauty of ballet in the heart of Edinburgh.</p>
-      <img src="balletshow.jpg" alt="balletshow" style="width:500px;">
+            Get ready to be moved by music, storytelling, and the timeless beauty of ballet in the heart of Edinburgh.
+          </p>
+          <br><a href="balletshow.html">Find the local available ballet shows</a>
+        </div>
+      </div>
     </section>
 
     <section id="balletshop">
-      <h1>Ballet Wardrobe Essentials:Find Your Local Ballet Shops</h1>
-      <p>Starting ballet doesn’t mean you need to buy a full wardrobe of leotards, skirts, and pointe shoes right away.
-        In
-        fact, all you need to begin is a comfortable outfit you can move in — and a pair of soft ballet shoes. That’s
-        more
-        than enough for your first class and to feel the joy of movement at the barre.
+      <div class="row">
+        <div class="left">
+          <h1>Ballet Wardrobe Essentials:Find Your Local Ballet Shops</h1>
+          <p>Starting ballet doesn’t mean you need to buy a full wardrobe of leotards, skirts, and pointe shoes right
+            away.
+            In
+            fact, all you need to begin is a comfortable outfit you can move in — and a pair of soft ballet shoes.
+            That’s
+            more
+            than enough for your first class and to feel the joy of movement at the barre.
 
-        When you're ready to explore more, Edinburgh has a lovely selection of local ballet shops offering everything
-        from
-        elegant wrap skirts and leotards to warm-up gear and pointe shoes. Whether you're just starting out or building
-        your
-        dream ballet wardrobe, this guide will show you where to find quality dancewear and friendly expert advice —
-        without
-        the pressure to buy everything at once.
+            When you're ready to explore more, Edinburgh has a lovely selection of local ballet shops offering
+            everything
+            from
+            elegant wrap skirts and leotards to warm-up gear and pointe shoes. Whether you're just starting out or
+            building
+            your
+            dream ballet wardrobe, this guide will show you where to find quality dancewear and friendly expert advice —
+            without
+            the pressure to buy everything at once.
 
-        Ballet is about progress, grace, and expression — not perfection. Let’s start with the basics and grow from
-        there.
-      </p>
-      <img src="balletshop.jpeg" alt="balletshop" style="width:500px;">
+            Ballet is about progress, grace, and expression — not perfection. Let’s start with the basics and grow from
+            there.
+          </p>
+          <br><a href="balletshop.html">Find the local available ballet shops</a>
+        </div>
+        <div class="right"><img src="balletshop.jpeg" alt="balletshop"></div>
     </section>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Edinburgh Ballet Info. All rights reserved.</p>
   </footer>
 
-  <script>
-    window.onload = function () {
-      const navLinks = document.querySelectorAll("nav ul li a");
-      const currentPath = ("/")
-  
-      navLinks.forEach(link => {
-        // Extract just the filename part (e.g., index.html, balletclass.html)
-        const linkPath = link.getAttribute("href");
-        if (currentPath.endsWith(linkPath)) {
-          link.classList.add("active");
-        }
-  
-        // Click event for dynamic switching
-        link.addEventListener("click", function () {
-          navLinks.forEach(link => link.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
-    };
-  </script>
-  
+  <script src="script.js"></script>
 
 </body>
 
