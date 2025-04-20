@@ -11,7 +11,7 @@
   <header>
     <nav>
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="/">Home</a></li>
         <li><a href="balletclass.html">Classes</a></li>
         <li><a href="#">Shows</a></li>
         <li><a href="#">Shops</a></li>
@@ -90,17 +90,24 @@
   <script>
     window.onload = function () {
       const navLinks = document.querySelectorAll("nav ul li a");
-
+      const currentPath = ("/")
+  
       navLinks.forEach(link => {
+        // Extract just the filename part (e.g., index.html, balletclass.html)
+        const linkPath = link.getAttribute("href");
+        if (currentPath.endsWith(linkPath)) {
+          link.classList.add("active");
+        }
+  
+        // Click event for dynamic switching
         link.addEventListener("click", function () {
-          // Remove .active from all
           navLinks.forEach(link => link.classList.remove("active"));
-          // Add .active to clicked one
           this.classList.add("active");
         });
       });
     };
   </script>
+  
 
 </body>
 
