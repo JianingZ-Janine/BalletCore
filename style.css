@@ -1,6 +1,8 @@
 body{
     background-color: rgb(253, 236, 244);
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 ul {
   list-style-type: none;
