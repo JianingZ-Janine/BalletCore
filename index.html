@@ -11,16 +11,19 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="balletclass.html">Classes</a></li>
         <li><a href="#">Shows</a></li>
         <li><a href="#">Shops</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+        <li style="float:right"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="ballet-classes">
+      <br>
       <h1>Local Ballet Class</h1>
       <p>Whether you're a complete beginner dreaming of your first plié or a seasoned dancer looking to refine your
         technique, Edinburgh has a wealth of ballet classes to suit every level, age, and interest. From graceful adult
@@ -42,7 +45,8 @@
       <p>Edinburgh’s rich cultural landscape extends far beyond its festivals and historic landmarks — it also boasts
         a
         thriving ballet scene that brings both classic elegance and contemporary creativity to the stage. Whether
-        you're a lifelong admirer of the art form or a curious first-time attendee, there’s always a ballet performance waiting
+        you're a lifelong admirer of the art form or a curious first-time attendee, there’s always a ballet performance
+        waiting
         to inspire.
 
         From grand productions at the Festival Theatre to intimate performances by local dance companies, the city
@@ -82,6 +86,21 @@
   <footer>
     <p>&copy; 2025 Edinburgh Ballet Info. All rights reserved.</p>
   </footer>
+
+  <script>
+    window.onload = function () {
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          // Remove .active from all
+          navLinks.forEach(link => link.classList.remove("active"));
+          // Add .active to clicked one
+          this.classList.add("active");
+        });
+      });
+    };
+  </script>
 
 </body>
 
