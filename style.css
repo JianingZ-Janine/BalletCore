@@ -84,17 +84,22 @@ a:active {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-out;
+  align-items: stretch;
 }
 
 .row.visible {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Move to original position */
+  opacity: 1;
+  /* Fully visible */
+  transform: translateY(0);
+  /* Move to original position */
 }
 
 .left,
 .right {
   width: 50%;
-  margin: 8px;
+  margin: 5px;
+  padding: 10px;
+  box-sizing: border-box
 }
 
 .right img {
