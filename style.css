@@ -20,6 +20,7 @@ ul {
   background-color: #e8c7e8;
 }
 
+
 li {
   float: inline-start;
 }
@@ -31,6 +32,10 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+.nav-right {
+  float: right;
 }
 
 .active {
