@@ -20,6 +20,13 @@ ul {
   background-color: #e8c7e8;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+}
 
 li {
   float: inline-start;
