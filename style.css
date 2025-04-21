@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(253, 236, 244);
+  background-color: #fdecf4;
 }
 
 h1 {
@@ -17,7 +17,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #e8c7e8;
+  background-color: #fdecf4;
 }
 
 header {
@@ -35,9 +35,9 @@ li {
 
 li a {
   display: block;
-  color: #39010d;
+  color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: 24px 16px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
@@ -61,9 +61,10 @@ li a {
   text-decoration: none;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 5px
 }
 
 a:hover,
