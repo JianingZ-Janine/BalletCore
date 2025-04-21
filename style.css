@@ -108,3 +108,14 @@ a:active {
   height: 400px;
   object-fit: cover;
 }
+
+footer {
+  background-color: #39010d;
+  color: white;
+  margin: 0px;
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
